@@ -13,3 +13,4 @@ function Add(numbers){
 console.log(Add([]));
 console.log(Add([1]));
 console.log(Add([1,2]));
+console.log(Add([1,2,3,4,5]));
