@@ -1,8 +1,13 @@
+
 function Add(numbers){
 
  if (toString.call(numbers) !== "[object Array]")
 	return false;
 		var sum =  0;
+		function trim (str)
+		{
+			 return str.replace (/\n/g, ',');
+		}
 		for(var i=0;i<numbers.length;i++){
 			sum += Number(numbers[i]);
 
@@ -13,4 +18,8 @@ function Add(numbers){
 console.log(Add([]));
 console.log(Add([1]));
 console.log(Add([1,2]));
-console.log(Add([1,2,3,4,5]));
+console.log(Add([1,'2\n',3,4,5]));
+
+
+
+
